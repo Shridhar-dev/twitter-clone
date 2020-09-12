@@ -12,7 +12,7 @@ function MidPage(props) {
     if(typeof props.un !== 'undefined'){
         un=props.un
     }
-    console.log(un)    
+    
     
     const [twd, setdata] = useState([])
     const [image, setImage] = useState(null)
@@ -28,6 +28,7 @@ function MidPage(props) {
     const handleContent = (e) => {
         e.preventDefault();
         setcontent(e.target.value)
+        
        
     }
     const handleUpload = () => {
