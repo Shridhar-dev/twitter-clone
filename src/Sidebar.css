@@ -1,0 +1,137 @@
+#curve{
+    border-radius:2.5rem;
+    display:flex;
+    flex:1;
+    align-items:center;
+    background-color:inherit;
+    padding:0.5rem;
+    padding-left:0;
+    transition: 0.5s;
+    
+}
+#blue{
+    color:#1da1f2;
+    
+}
+
+  
+#curve:hover>i, #curve:hover>h4{
+    color:#1da1f2;
+    cursor: pointer;
+}
+
+.sidetext{
+    font-size:1.2rem;
+    color:white;
+    margin:0;
+    padding:0.45rem;
+   
+
+}
+   
+.side__tweet__button{
+    background-color:rgb(29,161,242);
+    text-align: center;
+    font-size:1rem;
+    color:white;
+    border-radius: 3rem;
+    transition: 0.5s;
+}
+.side__tweet__accin{
+    background-color:rgb(255,255,255,0);
+    text-align: center;
+    font-size:1rem;
+    color:white;
+    transition: 0.6s;
+}
+.side__tweet__accin:hover{
+    background-color:rgb(255,255,255,0.1);
+}
+.side__tweet__accin>h4{
+    padding:0.3rem;
+    font-weight: lighter;
+}
+
+.side__tweet__accout{
+    background-color:rgb(255,255,255,0);
+    text-align: center;
+    font-size:1rem;
+    color:white;
+    transition: 0.6s;
+}
+.side__tweet__accout:hover{
+    background-color:rgb(255,255,255,0.1);
+}
+.side__tweet__accout>h4{
+    padding-left:0.8rem;
+    padding-right:0.8rem ;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    font-weight: lighter;
+}
+
+.side__tweet__button:hover{
+    background-color:rgb(0,161,242,0.8);
+    cursor: pointer;
+}
+.side__tweet__button>h4{
+    padding:0.8rem;
+}
+.sideicon{
+    color:white;
+}
+.fa-twitter{
+    color: white;
+    font-size:1.75rem;
+}
+.sidei{
+    padding:0.45rem;
+    min-width: 4rem;
+    max-width:4rem;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding-left: 0;
+    font-size:1.5rem;
+    color:white
+}
+.icone{  
+    
+    margin-left:2.8rem
+}
+.sidemain{
+    margin-left:4rem
+}
+@media only screen and (max-width: 1110px) {
+    .sidetext {
+      display: none;
+      padding:0;
+    }
+    .sidegrid{
+        display:flex;
+        flex:1;
+        flex-direction:column;
+        align-items:center;
+        margin:0;
+        padding:0;
+    }
+    .icone,.sidemain{
+        text-align: center;
+        margin:0;
+        padding:0
+    }
+    
+    .sidei{
+        margin-left:auto;
+        margin-right: auto;
+        padding-left:0;
+        padding-right:0;
+    }
+    #curve{
+        padding-left:0;
+        padding-right:0;
+    } 
+    
+}
