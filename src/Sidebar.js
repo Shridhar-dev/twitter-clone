@@ -128,7 +128,7 @@ function Sidebar(props) {
        return() =>{
          unsubscribe();
        }
-    }, [user,username,userhandle])
+    }, [user,username])
     
     return (
         <>
