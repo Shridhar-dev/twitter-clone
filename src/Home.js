@@ -17,7 +17,7 @@ function Home() {
             <Grid item xl={5} lg={5} md={9} sm={12} xs={12} style={{borderRight:"1px solid #38444d",color:"white",paddingTop:"0rem"}}>
                 <AMidPage disp="block" />
             </Grid>
-            <Grid item xl={4} lg={4} md={0}sm={0} xs={0} style={{display:'flex',flex:1,justifyContent:"center"}}>
+            <Grid item xl={4} lg={4} md={0} sm={0} xs={0} style={{display:'flex',flex:1,justifyContent:"center"}}>
                 <TrendBar />
             </Grid>
         </Grid>

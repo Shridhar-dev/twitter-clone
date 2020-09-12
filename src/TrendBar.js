@@ -3,7 +3,7 @@ import TrendItem from './TrendItem'
 import {Input} from "@material-ui/core";
 function TrendBar() {
     return (
-        <div style={{position:"sticky",top:"1rem",color:"white",marginTop:8,marginRight:30,marginLeft:30}}>
+        <div style={{position:"sticky",top:"1rem",color:"white",marginTop:8,marginRight:30,marginLeft:30,alignSelf: 'flex-start',height:"auto"}}>
             <div style={{backgroundColor:"rgb(21,24,28)",borderRadius:"1rem"}}><i class="fas fa-search" style={{padding:12}}></i><Input placeholder="Search Twitter" style={{color:"white"}}></Input></div>
             <div style={{backgroundColor:"rgb(21,24,28)",borderRadius:"1rem"}}>
                 <div>
