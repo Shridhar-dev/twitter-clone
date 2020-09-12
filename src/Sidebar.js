@@ -60,7 +60,6 @@ function Sidebar(props) {
 
       const handleSignIn = (e) => {
         e.preventDefault();
-        console.log("Unwanted SignIn")
           auth.signInWithEmailAndPassword(email,password)
           .catch((error)=>{
               alert(error.message)

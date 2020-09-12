@@ -1,11 +1,11 @@
-import React from 'react'
+import React,{forwardRef} from 'react'
 import {Avatar} from "@material-ui/core";
 import "./MidPage.css"
-function TweetBlock(props) {
+const TweetBlock=forwardRef((props,ref)=> {
     
     return (
         
-        <div class="tweet__block__main">
+        <div ref={ref} class="tweet__block__main">
             <div class="tweet__block__sub">
                 <div style={{padding:10,marginTop:10}}> 
                 <Avatar alt={props.username} src={props.profimg} />
@@ -26,5 +26,5 @@ function TweetBlock(props) {
         </div>
     )
 }
-
+)
 export default TweetBlock

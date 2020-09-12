@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import TweetBlock from "./TweetBlock"
 import firebase from "firebase"
 import db from "./firebase.js"
-
+import FlipMove from 'react-flip-move';
 import {Avatar,Input} from '@material-ui/core';
 import "./MidPage.css"
 const storage = firebase.storage();
@@ -97,13 +97,15 @@ function MidPage(props) {
         </div>
         </div>
         <div style={{display:props.displ}}>
+            <FlipMove>
         {
             twd.map((tw)=>{
                 return(
-                <TweetBlock img={tw.data.img} profimg={tw.data.profimg} userhandle={tw.data.userhandle} username={tw.data.username} content={tw.data.content} />
+                <TweetBlock key={tw.id} img={tw.data.img} profimg={tw.data.profimg} userhandle={tw.data.userhandle} username={tw.data.username} content={tw.data.content} />
                 )
             })
         }
+        </FlipMove>
     
         </div>
         </>
