@@ -20,6 +20,7 @@ function Sidebar(props) {
     const [username, setUsername] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPass] = useState("")
+    
     const [user, setUser] = useState(null)
   
     const handleOpen = () => {
@@ -82,6 +83,7 @@ function Sidebar(props) {
             <form>
                 <div>
             <Input type="text" placeholder="Username" onChange={(e)=>setUsername(e.target.value)}  style={{color:"white"}}/>
+            
             <Input type="text" placeholder="Email"  onChange={(e)=>setEmail(e.target.value)}  style={{color:"white"}}/>
             <Input type="password" placeholder="Password"  onChange={(e)=>setPass(e.target.value)}  style={{color:"white"}}/>
             </div>
