@@ -9,7 +9,7 @@ import "./MidPage.css"
 const storage = firebase.storage();
 
 var Filter = require('bad-words');
-let customFilter = new Filter({ placeHolder: 'No'});
+let customFilter = new Filter({ placeHolder: '*'});
 //blacklisted words
 customFilter.addWords('fuckoff', 'motherfucker', 'NoNoNoNooff','NoNoNoNofuckoff','sexy','pornhub','pornhub.com');
  
@@ -36,7 +36,7 @@ function MidPage(props) {
     const handleContent = (e) => {
         if(e.target.value.length > 0){
         e.preventDefault();
-        setcontent(customFilter.clean(e.target.value))
+        setcontent(e.target.value)
         }
         else{
             setcontent(e.target.value)
@@ -66,7 +66,7 @@ function MidPage(props) {
                         db.collection("Tweets").add({
                             timestamp:firebase.firestore.FieldValue.serverTimestamp(),
                             username:un,
-                            content:content,
+                            content:customFilter.clean(content),
                             img:url,
                         })
                         setcontent("")
@@ -79,7 +79,7 @@ function MidPage(props) {
         db.collection("Tweets").add({
             timestamp:firebase.firestore.FieldValue.serverTimestamp(),
             username:un,
-            content:content,
+            content:customFilter.clean(content),
             img:"",
         })
        }
